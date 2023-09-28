@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gym app</title>
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./fontawesome-free-6.4.2-web/css/all.css">
+</head>
+<body>
+    <div class="gym">
+        <div class="page-1">
+            <div class="page-1__main">
+                <span class="page-1__title">NO MORE EXCUSES | 
+                    <span class="page-1__title-now">DO IT NOW</span>
+                </span>
+                <p class="page-1__content">
+                    Achieve your fitness goals with our expert trainers! Join us for personalized workouts that get results    
+                </p>
+    
+                <div class="page-1__btn">
+                    <button class="btn btn-sign-in">SIGN IN</button>
+                    <button class="btn btn-sign-up">SIGN UP</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="page-2">
+            <div class="page-2__logo">
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <circle id="Ellipse 1" cx="20" cy="20" r="20" fill="url(#pattern0)"/>
+                    <defs>
+                    <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                    <use xlink:href="#image0_0_371" transform="scale(0.00277778)"/>
+                    </pattern>
+                    <image id="image0_0_371" data-name="11.jpg" width="360" height="360" xlink:href="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/4QAqRXhpZgAASUkqAAgAAAABADEBAgAHAAAAGgAAAAAAAABHb29nbGUAAP/bAIQAAwICCAgICAgICAgICAgICAcIBwcIBwcHCAgICAgHBwgIBwcHBwcHBwcHBwcHCgcIBwgJCQkHBwsNCggNBwgJCAEDBAQCAgIJAgIJCAICAggICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgI/8AAEQgBaAFoAwERAAIRAQMRAf/EAB0AAQACAwEBAQEAAAAAAAAAAAABAgMEBQYHCAn/xAA8EAACAQMBBQYEBQMEAAcAAAAAAQIDBBEhBRIxQWEGUXGBkfAHE6HRIrHB4fEjMkIUUnKSCBUkU2Kiwv/EABQBAQAAAAAAAAAAAAAAAAAAAAD/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwD+VaYDIEZAZAZAZAZAZAZAZAZAZAZAZAnIBMCQGQAAABDAjIDIFgJyAbArkBvAN4BvATvAEwI3gG8A3gCkA3gG8A3gG8AcgG8BMWBcDEgAAAAAAAAAAAAAAABAX3AIAZAJgQ2ATAjIBIC2AAAABVAGgAAAAyAAAAAAAwAAAAAtAC4GMCAAAAAAAAAAAAAAAJiBfeAqBUCQIAlIA0AiBIEJgSBDYEJASwIAAAAAAAAAAAAAAAAWgBcDG0BAAAAAAAAAAAAAACAkCUgDYEJgQkBOQJyBCQAA0AwBGAJTAjAAAAAAAAAAAAAAABAGwAFoAXAoBVgAAAAAAAAAAAAAATECQGAIaAnABgAAEAGwJyBVsAAyAAAAAAAAAAAAAAAAYAYAtAC4GOQEAAAAAAAAAAAAAAAWiBl3AIcQKNAQAaAkCGBCAAGBCAndAgAAyAAAAAACyQEboEMAAAAEwDYExYGQDEAAAAAAAAAAAAAAASAtEDPvATIDDugTUWNAKsCuALAQAAAAJApgBgAAAAEgJAgCyYGRxWOoGJgQAAAAAFoAXAxsCAAAAAAAAAAAAAASgJyBbeA2d3QDFTeqAxzeoEAEgL7gERpgTKOAKKIFnECrAgA0BCQDdAnAFo0wLOkBilEAgLKIENAMAVAAAAFoAXAxsCAAAAAAAAAAAAAAEBbAEwA3OXkBqUZYa8f1AySpatcwMbiBs0aAGeVsBX5WMvuAwzgBks7TIFLqGGBg3ADpgGuAEYAtCmBljSAyUqQF3TA16tIDXcQLUwFSIFMgVYAAAAtAC4GJMAwAAAAAAAAAAAAJgS2BAFooDaoPj1WPUDXjSA6NvT3muqS8198fUDHWo5z4sDZt6PDrj81+4G/Vo58vy9oDkNPzYF/l6e/fMD1FpsRKCzxxqB53aFrjPj/AGuqOgGu4AROIEKIF6UtQM4GObwBsR1QGOpTA15QAxuAESmwKSAoAAAALQAuBjSAhgAAAAAAAAAAABLAYAlAWggM9tzA3adrl57+ICwWJLPLX8/uBiuJa6d+PqB0qMcbr6fv+n1A3baGZPPc/zA1bSxzJru3vsBsW2zszgu+cfom/0A9jcUcLC4vh930A81tLZLaf0z0A4ttQxo10YGO62e1quAGrK2YETpaAa0YgbUEBE48QMlrDT375gWqRAwSiBXcAw1YAa0gIAAAAFoAXAx5AhgAAAAAAAAAAAAAlAMgSgN+xhzff+wHRjowNNVPxPq8+rAxTp5b8cgdW1aaS8cAb1J4eXzyvfvvA6GxLfO/JLvz4P3+QFraOKtP/AJ8Ou5ID2dGxym3x4eHReYHNvrLReGvogNC22RFrOF16rL/QDNHZFNpxxzfvQDkX3ZDd1g/J6ryfEDhXexnFagceFLEsP+QNqNLCyBhWui1fH+eiA3qdthL3x5gYasANeUAK4AxVkBozAgAAAAWgBcDHECGAAAAAAAAAAMATEBkCQGAAG/aS/DJeYFvmZwBnVDUDYtLXLT7s/UD0uz+zbT1i+veljOfDTiBFW1Si+jlFrwz+fEDPs6fy4pc5Y+n7YAtVp/5rWSaklwzuv9VlY6ge/scTgpR4SSeeIHOvqaSl03vy09XgDWpW34N3muL7vDqBv2+zYpLCAyVdnrAHnNs7B3lo8Prj9gPJ3PZqSesd5eOPRgasezDfHMV3Zy/yA3IbOjBYS8+fqBgrwA0KyA1JIDGBhrAaMmBAAAAAtAC4FAKgADAAAAAAAAASgCQEsAAAz27A7uwNjqrv6/2rReIETptSS7tAO72WsFOrCHJzjldM5l9APtC7JbraisxccrLw+HB8crX+QPnu1eydX5k0lhb3F5ejeVw7s8dAN3ZnZLM5b+rTSwljlx1z158QOxDs9TWU0o8uGFw78NIDnRlK0k44c6LeYtcaedd1rnHua4J8NNQ1Z38as/wySinlttZb5YXjr6LvA6kKSXDL694G5TYGSYHNu6YHMuKKA492gORcSA51eYGjVkBryYGKTA1rh6AaTAAAAAC0ALgY5AQAAAAAAAAAAEBOACYEgGAAzUQPWdj3NTxBZzCUpLpF6/wBubd2diSmuE9cJcM594A9f8KNlZrObX9qivBt6gfcqNJYA495bU8t83468Xw79QNOnCmljCzr3t68c6gXjs+PTPvr1A16/Z5S4pNe/D1A4tx2bUW92Kx4e35pgFYdAJ/0uAE6IHPuaAHKu6YHCvIgcW4pgcyvEDQrIDWkBSYGvcIDSYAAAAAWgBcDGgIYAAAAAAAEoCAJAboEoAAAlAZIAfRPhfaOU5ta7sMNcHiTTz6rHmB1+29okm13xys88a6cgPcfB6z/AKLl3yb9FgD2m2rqWFTpp5fNcV4evEDztfZFaP8Abl+n1xnu6AaP+tnT/ui8+T/Jp++CA1LrtXFZ/E/DXP5IDJYfEeKT3n66v88gd217V0KkcqSy+WeHrqBedePJ5QFJxQFKlr6YA511agci8oAcK6ofoByLu06Aci6oYA5Fw0BozeoFGBrXHADSAAAJTAgC0ALgYgADAAAAAAAADAEoBkCQAACyYF4gfW/gNa7zuXzUYL1bA2/iRYyjFVMJRlPdwnlt66vlh+IHv/hBbf8ApY9W39WB763sUnnHPms6dO4C13XjDV4QHlNpbRhPhS+Zxw91KPk91Z8kwPG7epQScpWkfOWH0/xQHhto16OdadSHWMlNLybQE7O2F81Zt60ZNf4vMJrxWX9gPR2Gz7mmlvxk8dcrHvqB6iyqz0Ti/f14gdtLTUDk31dIDym0tuxXFpcffiB5q67W09f4A4V92uT0ivfoBxq22ZSA1ZSYGs5MCY1wKXXADTAAAAAC0ALgY2BABMAAAAEgABsCyAYAYAZAAALJAZIID7B8Bajirp9yp/8A6Axdu79yUYct7Pnr9wPrvwro4taX/Ffr9wPcPgB47tJexWXJZUdd3XV8uXf3gea2DbXe0pyhCatqcMZUd350lJNby0xGOFjOuXy0A81287C06NC9qyvGq1rVjBW1SrKdWcX8vdlxWFUVTfTisYwtMMD5bs+6nJf3PG8lh6p5eOfiB6PZ+zpRqJxe7VhrjOM+HenjgB9k7GbXVWKUl+LhLPDK0A9ZX2SkspY994Hktv325nz6AfPNr9p8Z1A8NtLaik+IHGrVovk2+nBAV3l3R82BMbnH+MX6r7gblrtannEobvXjH9PyA3K1lB6rh0A497bYA0r3gBogAAAABaAFwMbYEAAAAAAAICwEbwE5AYAAQgJAuBkiB9t+AsVGnXk+EpqPpD7sDL2t2evmxjFcIzl46Y/cD6f8OaWLeku6EV9APYSiBw9p7GU+Xv33AcOWwZ05qpSk4Tj+JST4vPpjpjGM5yBxO0V9XlXpXbo0ncUk4fNw2qtNxwo1ae9uuUdJRmmsZ4NNpB8wexakZ7+4uLlGON2EdcrEV3clngkBD2bWnNS0znKx+F+uuPBgfUuyNo0oyklFtfiXFb3B4fc9HjqB9Fq3SUH4AfIu3Vzx1A+O7VuW2wOBXqATYWu+8dOHe+X1A6XaC0ofKtqlvGsv6fy7qVVfgV1FtzVOSW7iUHGajnOGspPIHLo022lqtNQE54eJa9QOxsmtiOAMd3LIHIvnwA08gAAAABaAFwMaQEMAAAAMAMASgDYAABKAhMCQJTAsBlpgfdvgJbb1Cppn+q8+cYgeg7ebEdGcJ8ViafnGX2TA9l2Cj/Rgv/igPYxogTC3QGreWC9QONf7OytdfL98geR2nsZvKSSXvjkDnWvZht8OYHqbPZu6kvMDf2hL8DA+U9s58QPlG0qerA4daIFrWnqsPD5NaYA7TqV1SqUlJ/KqSjUnDTEpRxuy1Wj0Wq46AcyMZRWi4rjzA1ZUW+IGxQjgDJNgcu8nqBgaAgCQIYAC0ALgUYFWAAAACYFmgIyBDYACUAAnABAALgZYAfpn/wAOdhFWbnznVqZ79Hur6RQHv+3mwvnW00l+KK31y4fdZXmBp9g6f9GC7opfQD29GkBlhagad5TYHNqwyBqS2bvAbFDZSWuPT3+oFXZgaG3LfEfeniB8e7ZLCfi+oHzO9jqwOXWoAYqEMPIHobfaCxhgYq+6+QHOqwQGGSAw1ZAcmo8sCuAEQIYAABMWBkAxgQAAAACAs0BG6AAJASAAAAAF0BkgwPsnwH+I0LaUres8U5y34SeiUnhSi3y3uKfenrqgP0Pf7fo/Kb3o8O/oBxuxTzBY4YX5Ae7tYaAbcaIGje0uIHIlD6gZ4UwM8qfeBr1AOH2gqJQ8sgfDu29zrhdftqB8+rvUDVaAxSpAWpyAu5AYmwMbiBo3ktOoGG3tnxA1ZcX4gUAAAAFoAXAxoCGBKAhASAYDIDIBgSwAAAAAAWTAyQYGaDA6dDa9VR3fmVN3/bvy3fTOAP1N8I7vetqWdXuQ9d3H6AfULN6Ab8QNa4QGjWttQLUbbHv36gV2jXUUBzrdbyz5geV7WVMZQHxDtO8ybA8fdQA1aKyBlnSAwOIEtAY90CkgNGcN6XRAZJxwgORJgQ0BAAABaAFwMbAgAASAAGwJiAYACQABAAAACUwLoDNFgZqcgP058C75StY66xlKP1bX0YH2S0q4A6VF5AyfJWANatHHv9QNKrWAxQtPmZfv3w+oGa32Y+nl9gPFdv7DdT6gfA+00XvMDzMo8QKWNH8TA2q1sBoVKQGCQGOQGpWmBr2V/FZ3s+WoGHaF8m8R4d4Gg2AkBAAABaAFwMbAjAAAmBOQIaAASkBIAAAAIAAAlAXTAyRYGWDA+7/+Hm+W7VhnVTi8dJLR+sWB+grOtnH58FxWnjjUDq2lTXQDpt6Acm8lr3aAch1OYG5Y7W3U8a81nOM+QGa37QPKVSG5nhJNTpy5L8SWU9eDQHG7e0VLGXq2v4A+Fdttkxg/HLzr4+0B5yvsmluOUpxjjV5aA8tRqrfbXDOgHWSygNG4oAc2tADUqsDnXtXCA5mQIAAGwIAAAJgwMgFMgVbAAMASgJYEYAASgDAIAAQAABOALIDJEDLBgfUfgZtBQuJp/wCcVp/xf5PewB+oLKvhfXRZffy9NEwO1ZcfH80B0qtbHeBxNpXWE/2A8xc7VXJ8+uf118QNOe2Ma8EseL4efrx7wOfc9q2ljk20+WOef3wnr6hytrfENVd2Gu/H/wCy7/Hv4gfLfiF2nqTkksKKytOLA8BUrOXF588gbNCpgDrWlyBevIDlXDA5tdgce9qZeO4DWSAMCAJYEAAAEwAyAYgAACzYEAMAJARkCUwJYAAgGAAACUgJAyIDJFgeq+H+1flXNKXJy3Xjukt304AfrPY+0Yypp55JvGvDR4XXDWnHqB6HZ20U2o511emq5aZ7+AHXqSz7/gDyu2lOWcN+Hry0XNgcWlsWTTx788ZfqBqXmwpp9OL9933XkHE2lYPXLw9ea7uAHztWcoVXKS0b0A892oknIDy9aiBhjlAdKxqAbdaWgHKrzA511VwBx3LIFcgQ2AAAAAAC0ALgYmgAACWwIAlSAlMCGBDYFgIAlAAGQGAAFkBeDAyRA6uwoN1aSXF1IJeLkkB+l+yd5LG5LSUWovOOXDXrnOeoHvrevjdxxxwePHGmfVAegpXG9Hrwf6+YHIvF6rnjX9wPEdqNoXVJ70MSg+PFNPx/YDjx29LL+Yp8M5jiSS5acfoBT/zKhU0jNZ4bre7LP/F4eQPP9prfFN7s+ecZfv6geEu4x/ynHXvf3YHKrVaa/wAo+qA14qEuDz4fwBsUaKT0AvdPQDj15AcS/rZeANVsCoDAAAAAAALQAuBjyBDAAMAAGAJiAAhgWAhoAgGQJSAAALIC0QMkQO/2Oob1zbx769L6TT/QD9K7QtXTnColpJbkvHjFvy09APWbOuc6eHc+OdOGvB+qA7drLku/37wBmq0c8s+IHOv9nKSaYHjr7YLhnEd6LzkDxHaHYdOaeVjn34fLX3z8APG3OwcR/ubeVo3o1hvhwzwA4F5YYzoBx61o2+H0A2LWhugb1N8wNe8rAcK/usAchsCMAVAZAAAAEoCALQAyAYQAAAmBIEJgEwGQJANgACAASgGQAFkwLRAyoD2Pwwt969t+k97/AKpsD9SXVkpwa6aPjh8n6gaNlVklhrDTxq+HXu88vzA9XYz0WvJc/wBPJgbVa6wBjnWA5F3cdAPI7arQ5pd2uAPNXM6beML6foBwdqbNp6vCA8nfW6y8AcmsgNepc4QHOubsDj3NbL8AMIDIFQAAAAAAALQAuBiwBOQAEAEBOADYEYAMCcAEAAnIAAAAlAXQGSIH0n4LWG9dqT4QhJ+uEv1A/TNB6IDk7apPSS5P8Wmu7zx4cfUDs7FuVha8s++7OcgdKtBPD7/fkBzbmo45zp6/nzQHJur9cOfv3xA8tth5+/ThgDy9xFJ6+HkBpXN1Fp66rkB5Xatyk2B5+4uAOZdXAHPlHeYGpPiwKsAmBAAAAAAAAExQGQCjAqBZAVAASmAAAJAMgAGAJQAAAAlAXiBnowy0gPtXwKsPxVp40ShBfVv80B9xhwAxXKygOXCo6Lyv7G+X+OemunHTl5geqsNpKUcvkk/fPyAxbTxjv448Pf1A8jtBYbeOnv7oDh3dVMDh7Woaae9APG3aaYHntpzeoHGqyA0JagX3cLAHMnxYEMCoAAAAAAAAC0ALgUAqwCYBIBgCd0ABKAAMAQBIBIAAAAWSAtEDoWkOYH6J+DNjuWkJc6jc/Hebx9APpKkA3cgalainpheYGhOrKlolmPjw5rTjhdOHmBjl2h7mnosY8O/muPm0Bq16uefFP+XpyenUDhVKLyvHXOO7ySWmdANbaFHMfXp9OvADxW04buW+P06+vQDxe062v6gcio2wEKeAImgOVXjqwMeQDYAAAAAAAAC1MDK0BhYEAAJkAyAiBCAsBAEgGAAAAAAC0UBsUKOQN1ywgP0f8MKqVnb4/wDah+QHuKdUBKpgCk6gEqSYHmts9lW3v0pbreri9YenFZ6PyA4FzO5hq6TcUsPdaeVpybT5AYY7bm1+KlU8ovuwBydrdp1DRxksvOGnw9+9APD7U7RObliL7k2B5utBt6vyArugQ0BiqMDm3i1A1wAAAAAAAAAC1MDK0BiyBDAjABgMATECAJTAkAwIQEoABGQJQFlADJCIG5T0AmtID7z8IdoqVpTXOH4X5afXiB9IoT0AvKQGOcwIpSA3acsoDUu6CA4G0nhAfNO1csvIHhbpgabAq0BikBgqMDn3gGuAAAAAAAAAMC0AMmQMW6AQBsAAAZAhIABO8AkAQFgJSAAALxYGWkBmUgK1ZAfTPg1tjd36fe94D7dZ19EBtbwGOpICsZgblGqBjuaoHm9s1NPUD5l2hqZYHjLuIGm0BVgYqgGtUYHPuXqBhAAAAAAAAAALQAuBQCGA3gIyAwAaAndAkBkCcASkBIFXIBkAkBkyBkyBeLAibA63ZLazpVYyT5pPwA/RGxdrKcYtPkB3qNYC9WYGFVAMyrga9zcAeZ2vd6MD57tepqwPL3SA1HEDFNga1SQGvUkBoVWBjAAAAAAAAAALUwMwGECAAEASASAlICcASBIENgVAJAXSAhsC+ALKQFosBJgVoS1A+n9g+0rS3Xy4agfV9nbS3kB0nVAwSrASqwGvc1wPK7XuOIHitpTA4FZAa80BpV5gaspAYZsDTqAYwAAAAAAAAAC1MDLkDDICAJSAlIABIDIAAAyBADIFkBKYFUtQLZAlAXTASApBgdzZF44yTyB9U7Obdylr3Aezt7/IFa12AV6gNa7uwPL7Uuc5A8zfMDjVQNS4YHMqzAxMDHMDUqMDEAAAAAAAAAATBgZGwMYEqIFkBAEAAABgEBO6BRgEgMgBsCYoAwJiBYCGBVMDoWwHqNhXzWAPoOy9qZXEDduL3QDnLbWHgDHc7WygORWu8gc+7WgHO/07A5t9HAHJmBanTArcQA5cwKgAAAAAAAAAExAyAUwBO8AAgAwITAlARgC0EBM2BjAtECQLRjqBdgVkgITAsmBGQIitQOpbUwOna6MD1GybzAHYneaAedurzDYFaN7kDdovIGeVvkBV2fhAeW2xSxkDj/KA26FuBq7VkorHNgcNsAAAAAAAAAAATEDIBTIACQIAMCoEpgSBeAGObAgC0QJzqBkp8wFUByAoBIACsmB2dmVVJdVx99QOzQgB06DwBtRuwONtOeoFLOoB3LSQHdtKIGzcW+gHnNqbJ54yB5z/AEWoFbuoqazz5IDyt1XcnlvVgYQAAAAAAAAAABMAMgFAADIEoCGgKgTECQMnIDCAAtEC1LiBkpgRX4LxArFgS0BVgMgRMBRrOLygPTWG0lJd3LAHVjXAxVLgDFcagRaoDtWcgPS2EwOjnIHO2tR0A8jtOSgssDxW0b5yefeANBsAAAAAAAAAAAAJigMgFAAENAXgBLQGJgALRAtNgYwCAswMlFAXpgRccgMcuCAtF5AhoCoESAqBloV2mB27S/yBuRqZA24IC8aeAOnagdm1q4A3VdAau1dqxUcyeEgPmW3NrupLuXJAcRsCAJYEAAAAAAAAAAFoAXAowAACyYF4oDHUiBQC0QIkwIAATJgZafAC0WBFZ8AKz4IClOWAMrAxgQwKgEwM1vcYA61vdLvXqB1Le8j/ALo+q+4G5C5j/uj/ANl9wNqndxX+UfVfcDchtKH++P8A2X3Ai42xBJvfjp3NfcDx229uuo+P4VwWQODOYFQABsAAAAAAAAAAAWgBbIH/2Q=="/>
+                    </defs>
+                </svg>
+            </div>
+
+            <h3 class="page-2__intro">Welcome  youlakou</h3>
+
+            <p class="page-2__infor">Way to go ! you’re  on a hot  3-week work out streak</p>
+
+            <div class="page-2__times">
+                <div class="page-2__times--sat">SAT</div>
+                <p>Time to workout</p>
+            </div>
+
+            <div class="page-2__bar">
+                <h3>GUIDED TRAINING</h3>
+
+                <svg width="268" height="1" viewBox="0 0 268 1" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 0.5H268" stroke="#959595"/>
+                </svg>
+            </div>
+
+            <div class="page-2__main">
+                <div class="page-2__content">
+                    <h2>CHEST & ARMS</h2>
+                    <h3>Recommended</h3>
+                    <p>Dynamic Warmup | 22 Minutes
+                    </p>
+                </div>
+            </div>
+
+            <div class="page-2__exercise">
+                NEXT EXERCISE
+            </div>
+
+            <div class="page-2__conatiner">
+                <div class="page-2__container-main">    
+                    <div class="page-2__conatiner-svg1">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" fill="none">
+                            <circle cx="12.5" cy="12.5" r="12.5" fill="#E6FE58"/>
+                        </svg>
+                    </div>
+    
+                    <div class="page-2__conatiner-content">
+                        <h3>Incline Dumbbell Flyes</h3>
+                        <p>It works your upper and outer pecs to build
+                            a broader chest .
+                        </p>
+                    </div>
+                </div>
+                <div class="page-2__container-main">
+                        <div class="page-2__conatiner-svg2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" fill="none">
+                                <circle cx="12.5" cy="12.5" r="12.5" fill="#E6FE58"/>
+                            </svg>
+                        </div>
+        
+                        <div class="page-2__conatiner-content">
+                            <h3>Cable Rope Overhead Extensions</h3>
+                            <p>This move works your triceps through a full 
+                                range of motion, and the cable forces 
+                                your muscles to work hard . 
+                            </p>
+                    </div>
+                </div>
+
+                <div class="page-2__container-main3">
+                    <div class="page-2__conatiner-svg3">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" fill="none">
+                            <circle cx="12.5" cy="12.5" r="12.5" fill="#E6FE58"/>
+                        </svg>
+                    </div>
+                    <div class="page-2__conatiner-content-3"></div>
+                </div>
+            </div>
+
+            
+        </div>
+
+        <div class="page-3">
+           <div class="page-3__main">
+            <div class="page-3__container">
+                <div class="page-3__header">Full Workout</div>
+                <div class="page-3__title">CHEST & ARMS
+                </div>
+
+                <div class="page-3__item">
+                    <div class="page-3__list">2h</div>
+                    <div class="page-3__list">Dubmle flyes</div>
+                    <div class="page-3__list">Bryan</div>
+                </div>
+            </div>
+
+            <div class="page-3__times">
+                <div class="page-3__words">Dynamic Warmup | </div>
+                <div class="page-3__number">22 mins </div>
+            </div>
+
+            <div class="loaderBar"></div>
+
+            
+            <button class="page-3__btn">
+                keep watching
+            </button>
+
+           </div>
+        </div>
+
+        <div class="page-4">
+           <div class="page-4__main">
+            <div class="page-3__container">
+                <div class="page-3__header">PROGRESS  RESULT</div>
+                <div class="page-3__title">Full statics
+                </div>
+
+                <div class="page-3__item">
+                    <div class="page-3__list">20h</div>
+                    <div class="page-3__list">YOULAKOU</div>
+                    <div class="page-3__list">300 CAL</div>
+                </div>
+            </div>
+
+            <div class="page-3__times">
+                <div class="page-3__words">Dynamic Warmup | </div>
+                <div class="page-3__number">22 mins </div>
+            </div>
+
+            <div class="page-4__parameter">
+               <div class="general page-4__parameter-1">
+                <div class="page-4__parameter-1-svg">
+                    <svg width="98" height="98" viewBox="0 0 98 98" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g id="Container">
+                        <path id="Ellipse" d="M98 49C98 76.062 76.062 98 49 98C21.938 98 0 76.062 0 49C0 21.938 21.938 0 49 0C76.062 0 98 21.938 98 49ZM9.8 49C9.8 70.6496 27.3504 88.2 49 88.2C70.6496 88.2 88.2 70.6496 88.2 49C88.2 27.3504 70.6496 9.8 49 9.8C27.3504 9.8 9.8 27.3504 9.8 49Z" fill="#F5F5F5"/>
+                        <path id="Ellipse_2" d="M49 0C58.0367 1.07762e-07 66.8974 2.49897 74.6024 7.22063C82.3075 11.9423 88.5567 18.7027 92.6593 26.7545C96.7619 34.8062 98.558 43.8357 97.849 52.8445C97.1399 61.8533 93.9535 70.4906 88.6418 77.8015C83.3302 85.1123 76.1003 90.8119 67.7515 94.2701C59.4027 97.7283 50.2602 98.8104 41.3347 97.3967C32.4093 95.9831 24.0486 92.1288 17.177 86.2599C10.3055 80.391 5.19073 72.7362 2.39823 64.1418L11.7186 61.1135C13.9526 67.989 18.0444 74.1128 23.5416 78.8079C29.0389 83.503 35.7274 86.5865 42.8678 87.7174C50.0081 88.8483 57.3221 87.9826 64.0012 85.2161C70.6802 82.4495 76.4642 77.8899 80.7135 72.0412C84.9628 66.1925 87.512 59.2827 88.0792 52.0756C88.6464 44.8685 87.2095 37.645 83.9275 31.2036C80.6454 24.7622 75.646 19.3538 69.4819 15.5765C63.3179 11.7992 56.2294 9.8 49 9.8V0Z" fill="url(#paint0_linear_203_77)"/>
+                        </g>
+                        <defs>
+                        <linearGradient id="paint0_linear_203_77" x1="-1.64972e-07" y1="49.4667" x2="98" y2="49.4667" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#73EC48"/>
+                        <stop offset="0.526042" stop-color="#F4F755"/>
+                        <stop offset="1" stop-color="#99F63B"/>
+                        </linearGradient>
+                        </defs>
+                    </svg>                        
+                </div>
+
+                <div class="page-4__times">
+                    <div class="page-4__footer-svg">
+                        <div class="page-4__number">300</div>
+                         <div class="page-4__list">kcal</div>
+                    </div>
+
+                    <div class="page-4__footer-svg">
+                        <div class="page-4__number">22</div>
+                         <div class="page-4__list">min</div>
+                    </div>
+
+                    <div class="page-4__footer-svg">
+                        <div class="page-4__number">15</div>
+                         <div class="page-4__list">hours</div>
+                    </div>
+                </div>
+               </div>
+           
+                <div class="general page-4__parameter-2">
+                    <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g id="gg:gym">
+                        <path id="Vector" d="M50.685 24.6725L42.08 12.385L46.1775 9.5175L54.78 21.805L50.685 24.6725ZM45.975 31.0225L41.675 24.875L21.195 39.215L25.495 45.3575L21.4 48.2275L9.92999 31.8425L14.025 28.975L18.325 35.12L38.805 20.78L34.505 14.635L38.6 11.7675L50.07 28.15L45.975 31.02V31.0225ZM51.9125 17.7075L56.0075 14.84L53.14 10.745L49.045 13.6125L51.9125 17.7075ZM17.92 47.615L9.31499 35.3275L5.21999 38.195L13.8225 50.4825L17.92 47.615ZM10.955 46.3875L6.85999 49.255L3.99249 45.16L8.08749 42.2925L10.955 46.3875Z" fill="#E6FE58"/>
+                        </g>
+                    </svg>
+    
+                    <div class="page-4__parameter-2-full">
+                        <div class="page-4__parameter-2-full-1">1800</div>
+                        <div class="page-4__parameter-2-full-2">72%</div>
+                    </div>        
+                    
+                    <div class="page-4__parameter-2-remaining">Remaining : 700</div>
+
+                    <div class="loaderBar"></div>
+                </div>
+            </div>
+           </div>
+        </div>      
+
+
+        <div class="footer">
+            <div class="footer__item">
+               <div class="icon-statics">
+                <div class="footer__icon">
+                    <i class="fa-regular fa-clipboard"></i>
+                </div>
+
+                <div class="footer__list">
+                    Statics
+                </div>
+               </div>
+            </div>
+
+            <div class="footer__item">
+               <div class="icon-home">
+                <div class="footer__icon">
+                    <i class="fa-solid fa-house"></i>
+                </div>
+
+                <div class="footer__list">
+                    Home
+                </div>
+               </div>
+            </div>
+
+            <div class="footer__item">
+               <div class="icon-profile">
+                <div class="footer__icon">
+                    <i class="fa-regular fa-user"></i>
+                </div>
+
+                <div class="footer__list">
+                    Profile
+                </div>
+               </div>
+            </div>
+        </div>
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>
